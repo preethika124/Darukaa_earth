@@ -1,0 +1,6 @@
+{
+  "name": "Darukaa.Earth",
+  "description": "Geospatial data analytics dashboard for managing and visualizing carbon and biodiversity projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
