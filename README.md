@@ -10,29 +10,29 @@ The platform combines a modern React frontend, FastAPI backend, PostgreSQL/PostG
 
 ## 📌 Table of Contents
 
-* [Overview](#-overview)
-* [Key Features](#-key-features)
-* [Technology Stack](#-technology-stack)
-* [High-Level Architecture](#-high-level-architecture)
-* [Application Flow](#-application-flow)
-* [Project Structure](#-project-structure)
-* [Database Schema](#-database-schema)
-* [Database Relationships](#-database-relationships)
-* [Authentication](#-authentication)
-* [Geospatial Data Flow](#-geospatial-data-flow)
-* [Analytics Architecture](#-analytics-architecture)
-* [API Endpoints](#-api-endpoints)
-* [Environment Configuration](#-environment-configuration)
-* [Prerequisites](#-prerequisites)
-* [Local Setup](#-local-setup)
-* [Running the Application](#-running-the-application)
-* [Testing](#-testing)
-* [CI/CD Pipeline](#-cicd-pipeline)
-* [GitHub Actions Workflow](#-github-actions-workflow)
-* [Code Quality](#-code-quality)
-* [Security Considerations](#-security-considerations)
-* [Troubleshooting](#-troubleshooting)
-* [Future Improvements](#-future-improvements)
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Technology Stack](#-technology-stack)
+- [High-Level Architecture](#-high-level-architecture)
+- [Application Flow](#-application-flow)
+- [Project Structure](#-project-structure)
+- [Database Schema](#-database-schema)
+- [Database Relationships](#-database-relationships)
+- [Authentication](#-authentication)
+- [Geospatial Data Flow](#-geospatial-data-flow)
+- [Analytics Architecture](#-analytics-architecture)
+- [API Endpoints](#-api-endpoints)
+- [Environment Configuration](#-environment-configuration)
+- [Prerequisites](#-prerequisites)
+- [Local Setup](#-local-setup)
+- [Running the Application](#-running-the-application)
+- [Testing](#-testing)
+- [CI/CD Pipeline](#-cicd-pipeline)
+- [GitHub Actions Workflow](#-github-actions-workflow)
+- [Code Quality](#-code-quality)
+- [Security Considerations](#-security-considerations)
+- [Troubleshooting](#-troubleshooting)
+- [Future Improvements](#-future-improvements)
 
 ---
 
@@ -42,18 +42,18 @@ Darukaa.Earth provides a centralized platform for environmental project manageme
 
 The application allows users to:
 
-* Create and manage environmental projects.
-* Add geographically defined sites to projects.
-* Draw site boundaries on an interactive map.
-* Store polygon geometry using PostGIS.
-* Calculate site areas.
-* Track carbon stock and carbon sequestration.
-* Monitor biodiversity metrics.
-* Monitor vegetation and forest-cover indicators.
-* Maintain historical analytics records.
-* Visualize environmental trends.
-* View project-level and site-level analytics.
-* Authenticate users using JWT-based authentication.
+- Create and manage environmental projects.
+- Add geographically defined sites to projects.
+- Draw site boundaries on an interactive map.
+- Store polygon geometry using PostGIS.
+- Calculate site areas.
+- Track carbon stock and carbon sequestration.
+- Monitor biodiversity metrics.
+- Monitor vegetation and forest-cover indicators.
+- Maintain historical analytics records.
+- Visualize environmental trends.
+- View project-level and site-level analytics.
+- Authenticate users using JWT-based authentication.
 
 The application is designed around the following principle:
 
@@ -81,15 +81,15 @@ Users can create and manage environmental projects.
 
 Each project contains information such as:
 
-* Project name
-* Description
-* Project type
-* Status
-* Location
-* Start date
-* End date
-* Total area
-* Project creator
+- Project name
+- Description
+- Project type
+- Status
+- Location
+- Start date
+- End date
+- Total area
+- Project creator
 
 Projects can contain multiple sites.
 
@@ -101,13 +101,13 @@ Each environmental project can contain one or more geographic sites.
 
 Users can:
 
-* Create sites.
-* Draw polygons on the map.
-* Store geographic boundaries.
-* Calculate site area.
-* View site location.
-* Search and filter sites.
-* Delete sites.
+- Create sites.
+- Draw polygons on the map.
+- Store geographic boundaries.
+- Calculate site area.
+- View site location.
+- Search and filter sites.
+- Delete sites.
 
 Site geometries are stored using:
 
@@ -125,9 +125,9 @@ GeoAlchemy2
 
 The frontend uses:
 
-* Mapbox GL JS
-* Mapbox GL Draw
-* Turf.js
+- Mapbox GL JS
+- Mapbox GL Draw
+- Turf.js
 
 Users can interactively draw polygons representing environmental sites.
 
@@ -139,12 +139,12 @@ The resulting GeoJSON geometry is sent to the backend.
 
 The platform tracks environmental carbon metrics including:
 
-* Carbon stock
-* Carbon sequestered
-* Carbon change
-* Baseline carbon
-* Net carbon gain
-* Projected carbon values
+- Carbon stock
+- Carbon sequestered
+- Carbon change
+- Baseline carbon
+- Net carbon gain
+- Projected carbon values
 
 ---
 
@@ -152,11 +152,11 @@ The platform tracks environmental carbon metrics including:
 
 The application tracks:
 
-* Biodiversity score
-* Species count
-* Ecosystem health
-* Threatened species estimates
-* Pollinator index
+- Biodiversity score
+- Species count
+- Ecosystem health
+- Threatened species estimates
+- Pollinator index
 
 ---
 
@@ -164,10 +164,10 @@ The application tracks:
 
 The platform provides vegetation-related indicators such as:
 
-* NDVI
-* Forest cover
-* Healthy canopy area
-* Vegetation change rate
+- NDVI
+- Forest cover
+- Healthy canopy area
+- Vegetation change rate
 
 ---
 
@@ -808,25 +808,25 @@ The analytics response includes:
 
 ### Carbon
 
-* Current carbon
-* Annual sequestration
-* Baseline carbon
-* Net gain
-* Projected 2030 carbon
+- Current carbon
+- Annual sequestration
+- Baseline carbon
+- Net gain
+- Projected 2030 carbon
 
 ### Biodiversity
 
-* Biodiversity score
-* Species count
-* Threatened species estimate
-* Pollinator index
+- Biodiversity score
+- Species count
+- Threatened species estimate
+- Pollinator index
 
 ### Vegetation
 
-* NDVI
-* Forest cover
-* Healthy canopy
-* Change rate
+- NDVI
+- Forest cover
+- Healthy canopy
+- Change rate
 
 > Some dashboard and analytics values in the current implementation are generated using demo/synthetic calculations rather than real environmental sensor or satellite datasets. They should not be interpreted as independently verified environmental measurements.
 
@@ -1008,12 +1008,12 @@ Install the following before running the application.
 
 ## Required
 
-* Node.js 20+
-* npm
-* Python 3.11+
-* PostgreSQL
-* PostGIS
-* Git
+- Node.js 20+
+- npm
+- Python 3.11+
+- PostgreSQL
+- PostGIS
+- Git
 
 ---
 
@@ -1199,9 +1199,9 @@ pytest backend/tests/test_geospatial.py -v
 
 The tests include validation of:
 
-* Valid polygon geometries.
-* Invalid/self-intersecting polygons.
-* Geospatial validation behavior.
+- Valid polygon geometries.
+- Invalid/self-intersecting polygons.
+- Geospatial validation behavior.
 
 Example:
 
@@ -1478,7 +1478,6 @@ on:
     branches: [main]
 
 jobs:
-
   frontend-check:
     name: Frontend Lint & Build
     runs-on: ubuntu-latest
@@ -1497,7 +1496,6 @@ jobs:
 
       - name: TypeScript Check & Build
         run: npm run build
-
 
   backend-check:
     name: Backend Lint & Tests
@@ -1780,9 +1778,9 @@ The development seed includes:
 
 The projects include examples related to:
 
-* Western Ghats rainforest and wildlife corridor
-* Sundarbans blue carbon and mangrove protection
-* Araku Valley regenerative agroforestry
+- Western Ghats rainforest and wildlife corridor
+- Sundarbans blue carbon and mangrove protection
+- Araku Valley regenerative agroforestry
 
 Historical monitoring records cover multiple dates from:
 
@@ -1838,20 +1836,20 @@ A typical development workflow is:
 
 Potential improvements include:
 
-* Add a complete production CD deployment workflow.
-* Add PostgreSQL/PostGIS integration tests using an isolated test database.
-* Add backend linting with Ruff.
-* Add stronger frontend ESLint configuration.
-* Add automated dependency/security scanning.
-* Add database migrations using Alembic.
-* Add role-based access control.
-* Add real satellite/environmental data sources.
-* Replace synthetic analytics with verified environmental datasets.
-* Add automated API integration tests.
-* Improve database query efficiency.
-* Add production monitoring and logging.
-* Add Docker-based development and deployment.
-* Add automated deployment to cloud infrastructure.
+- Add a complete production CD deployment workflow.
+- Add PostgreSQL/PostGIS integration tests using an isolated test database.
+- Add backend linting with Ruff.
+- Add stronger frontend ESLint configuration.
+- Add automated dependency/security scanning.
+- Add database migrations using Alembic.
+- Add role-based access control.
+- Add real satellite/environmental data sources.
+- Replace synthetic analytics with verified environmental datasets.
+- Add automated API integration tests.
+- Improve database query efficiency.
+- Add production monitoring and logging.
+- Add Docker-based development and deployment.
+- Add automated deployment to cloud infrastructure.
 
 ---
 
